@@ -1,0 +1,25 @@
+<!--
+  Generated template for the InternalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Internal Page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding *ngIf="user != null">
+
+  <ion-label >
+    Welcome {{user.name}}
+  </ion-label>
+
+  <ion-icon *ngIf="user.gender == 'male'" name="body"></ion-icon>
+
+  <ion-icon *ngIf="user.gender == 'female'" name="flame"></ion-icon>
+
+  <ion-icon *ngIf="user.gender == 'other'" name="infinite"></ion-icon>
+
+</ion-content>
